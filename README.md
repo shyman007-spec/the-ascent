@@ -44,8 +44,18 @@
 - To push as Jonny: remote is already set to `git@github-ascent:shyman007-spec/the-ascent.git`
 
 ## Key files
-- `index.html` — the live website (edit this directly)
+- `index.html` — coming soon page (what the public sees)
+- `preview.html` — full website for client preview
 - `website-v2.html` — previous working copy (kept for reference)
 - `favicon.svg` — browser tab icon
 - `images/` — all images including `mood-landscape.png` (hero photo)
 - `fonts/` — Cormorant Garamond TTF files
+
+## Going live
+When ready to launch, replace `index.html` with the contents of `preview.html`:
+```
+cp preview.html index.html
+git add index.html
+git commit -m "Go live"
+git push
+```
