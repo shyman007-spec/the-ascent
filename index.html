@@ -1267,22 +1267,22 @@
                 <div class="form-row">
                     <div class="form-field">
                         <label>First Name</label>
-                        <input type="text" placeholder="James">
+                        <input type="text" name="first_name" placeholder="James" required>
                     </div>
                     <div class="form-field">
                         <label>Last Name</label>
-                        <input type="text" placeholder="Whitmore">
+                        <input type="text" name="last_name" placeholder="Whitmore">
                     </div>
                 </div>
 
                 <div class="form-field">
                     <label>Email Address</label>
-                    <input type="email" placeholder="james@yourschool.ac.uk">
+                    <input type="email" name="email" placeholder="james@yourschool.ac.uk" required>
                 </div>
 
                 <div class="form-field">
                     <label>I am enquiring as</label>
-                    <select>
+                    <select name="enquiry_type">
                         <option value="">Select...</option>
                         <option>A parent</option>
                         <option>A school / pastoral lead</option>
@@ -1293,12 +1293,12 @@
 
                 <div class="form-field">
                     <label>School (if applicable)</label>
-                    <input type="text" placeholder="School name">
+                    <input type="text" name="school" placeholder="School name">
                 </div>
 
                 <div class="form-field">
                     <label>Message</label>
-                    <textarea placeholder="Tell us a little about your situation or any questions you have..."></textarea>
+                    <textarea name="message" placeholder="Tell us a little about your situation or any questions you have..."></textarea>
                 </div>
 
                 <button type="submit" class="btn-form">Send Enquiry</button>
